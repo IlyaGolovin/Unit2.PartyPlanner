@@ -67,8 +67,10 @@ function renderArtists() {
       li.innerHTML = `
       <div class="artist-card">
         <h2>${event.name}</h2>
-        <p>${formattedDate}</p>
+        <p>${event.description}</p>
         <p>${event.location}</p>
+        <p>${formattedDate}</p>
+        
         <button data-artist-id="${event.id}" onclick="deleteArtist(event)">Delete Event</button>
       </div>
     `;
