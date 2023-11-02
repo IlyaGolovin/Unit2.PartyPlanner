@@ -69,7 +69,7 @@ function renderArtists() {
         <h2>${event.name}</h2>
         <p>${formattedDate}</p>
         <p>${event.location}</p>
-        <button data-artist-id="${event.id}" onclick="deleteArtist(event)">Delete Artist</button>
+        <button data-artist-id="${event.id}" onclick="deleteArtist(event)">Delete Event</button>
       </div>
     `;
     } else {
@@ -92,6 +92,8 @@ function renderArtists() {
 async function addArtist(event) {
   
     event.preventDefault();
+
+    
   
     const artistData = {
       name: addArtistForm.name.value,
@@ -112,6 +114,9 @@ async function addArtist(event) {
       }
   
       render();
+      // Clear the input fields.
+    addArtistForm.reset();
+
     } catch (error) {
       console.error(error);
     }
