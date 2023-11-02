@@ -29,7 +29,7 @@ async function getArtists() {
     const response = await fetch(API_URL);
     const json = await response.json();
     state.events = json.data;
-    console.log(state.events);
+    //console.log(state.events);
   } catch (error) {
     console.error(error);
   }
@@ -73,7 +73,7 @@ function renderArtists() {
       </div>
     `;
     } else {
-      //The date is not valid.
+      console.log("The date is not valid.")
       // Handle the error.
     }
 
@@ -95,7 +95,6 @@ async function addArtist(event) {
   
     const artistData = {
       name: addArtistForm.name.value,
-      //imageUrl: addArtistForm.imageUrl.value,
       description: addArtistForm.description.value,
       date: new Date(addArtistForm.date.value).toISOString(),
       location: addArtistForm.location.value,

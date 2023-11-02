@@ -20,6 +20,8 @@ ul {
     max-height: 30%;
   }
 
+ 
+
   @media (max-width: 576px) {
     body {
       /* Make the font size larger for mobile devices. */
