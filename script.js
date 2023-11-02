@@ -78,7 +78,7 @@ function renderArtists() {
     }
 
     // Add the event card to the array.
-    eventCards.push(li);
+    eventCards.unshift(li);
   }
 
   // Replace the contents of the artist list with the event cards.
