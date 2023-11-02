@@ -19,3 +19,43 @@ ul {
     max-width: 100%;
     max-height: 30%;
   }
+
+  @media (max-width: 576px) {
+    body {
+      /* Make the font size larger for mobile devices. */
+      font-size: 1.2rem;
+    }
+  
+    /* Make the label on the right to the input. */
+    /* #addArtist label {
+      float: right;
+    } */
+  
+    /* Make the input field wider to accommodate the label on the right. */
+    #addArtist input {
+      width: 90%;
+    }
+  
+    /* Increase the padding around the form elements. */
+    #addArtist input,
+    #addArtist button {
+      padding: 1rem;
+      margin: 2px;
+    }
+  
+    /* Use larger buttons. */
+    #addArtist button {
+      font-size: 1.5rem;
+    }
+  
+    /* Make the ul element fill the width of the screen. */
+    #artists {
+      width: 100%;
+    }
+
+    #addArtist label {
+        padding-right: 5px;
+      }
+  }
+  
+  
